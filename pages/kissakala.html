@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kissakala</title>
+    <link href="../styles/SCSS/built-styles.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="../styles/styles.css" rel="stylesheet">
+    <script src="../script/scripts.js" defer></script>
+</head>
+
+<body class="bg-black">
+
+  <div class="bimg" alt="background">
+
+        <!-- navbarr-->
+
+        <nav class="navbar navbar-expand-sm navbar-dark bg-gray" aria-label="Third navbar example">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="../etusivu.html">Eetun Kotisivut</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample03" aria-controls="navbarsExample03" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+      
+            <div class="collapse navbar-collapse" id="navbarsExample03">
+              <ul class="navbar-nav me-auto mb-2 mb-sm-0">
+                <li class="nav-item">
+                  <a class="nav-link" href="../pages/Auto.html">Autoni</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link"  href="../pages/galleria.html">Galleria</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page"  href="../pages/kissakala.html">Jscript tehtävä</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+     
+        <!--buttons-->
+
+        <div class="coverBnt text-center text-white bg-transparent">
+            <main class="px-3 position-absolute top-50 start-50 translate-middle">
+                <h2>Viimeistä viedään</h2>
+                    <button type="button" class="btn btn-lg btn-secondary fw-bold border-white bg-dark"
+                        data-bs-container="body" data-bs-toggle="popover" data-bs-placement="bottom"
+                        data-bs-content="Alhaalla on tehtävä sinulle.">
+                        Klikkaa mua
+                    </button>
+            </main>
+        </div>
+  </div>
+
+
+  <!--divider-->
+  <div class="divider"></div>
+
+  <div class="container text-white">
+  <div class="row">
+  <h1>Star wars api</h1>
+  <nav id="nav"></nav>
+  <main id="main"></main>
+  <footer id="footer"></footer>
+  <div class="overlay"><div class="loading">loading</div></div>
+  </div>
+  </div>
+
+
+  <div class="divider"></div>
+  <!--tehtävä container-->
+
+  <div class="container text-white mx-auto flex-column">
+    <div class="row">
+     <div id="t01">
+        <h3>Tässä tehtävässä mietitään mikä näistä tulee</h3>
+        <div class="col-3">
+            <!--https://pixabay.com/fi/illustrations/kissa-kissan-pieni-kissa-kawaii-5415709/-->
+          <img src="../images/kissakala.png" alt="kissakala">
+        </div>
+        <div class="input col-3 w-50">
+          <label for="tehtava" class="form-label">Näitä ui vedessä</label>
+          <input type="text" class="form-control1" id="tehtava">
+        </div>
+        <div class="button col-3">
+          <button id="btn1" type="button" class="btn btn-lg btn-secondary fw-bold border-white bg-dark" style="margin-top: 8px">Tarkista</button>
+        </div>
+      </div>
+    </div>  
+      <div id="success" class="alert alert-success" role="alert">
+      </div> 
+      <div id="danger" class="alert alert-danger" role="alert">
+      </div>
+
+  
+    <!--formcontainer-->
+    <div id="form1" class="content-container mx-fluid flex-column text-white">
+      <div class="row">
+            <form>
+              <h1>Minne palkinto tehtävästä?</h1>
+                <div class="col">
+                  <label for="inputAddress" class="form-label">Address</label>
+                  <input type="text" name="address" placeholder="Write down your fake address" class="form-control1 w-50" id="address">
+                </div>
+                <div class="col">
+                  <label for="inputCity" class="form-label">City</label>
+                  <input type="text" name="city" placeholder="Same" class="form-control1 w-50" id="city">
+                </div>
+                <div class="col">
+                  <label for="inputZip" class="form-label">Zip</label>
+                  <input type="number" name="zip" placeholder="90230?" class="form-control1 w-50" id="zip">
+                </div>
+                <div class="col" style="margin-top: 8px;">
+                  <button id="btn2" type="submit" class="btn btn-lg btn-secondary fw-bold border-white bg-dark">Tilaa</button>
+                </div>
+            </form>
+      </div>
+    </div>
+      <div id="danger" class="alert alert-danger" role="alert"></div>
+  </div>   
+
+     
+
+    <div class="divider"></div>
+
+    <!--FOOTER-->
+
+    <div class="footer-container bg-transparent">
+        <footer class="d-flex  justify-content-center">
+            <div class="icons">
+                <a href="https://www.youtube.com/user/wentir/featured" target="_blank" rel="tube">
+                <ion-icon size="large" name="logo-youtube"></ion-icon></a>
+            </div>
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+</html>
